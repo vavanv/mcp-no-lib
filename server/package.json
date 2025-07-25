@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/server.ts",
+    "server:dev": "ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inspector2": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector node dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector ts-node src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
